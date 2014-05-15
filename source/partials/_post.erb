@@ -1,0 +1,7 @@
+<article>
+    <header>
+        <h1><%= link_to current_article.title, current_article %></h1>
+        <p class="meta"><time datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time></p>
+    </header>
+    <%= current_article.body %>
+</article>

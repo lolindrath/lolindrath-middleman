@@ -1,0 +1,25 @@
+{% include header.html %}
+<div id="container">
+  <header id="main-head">
+    <div id="logo">&nbsp;</div>
+    <div id="title">
+      <h1><a href="/">Lolindrath</a></h1>
+    </div>
+    <div id="navigation">
+      <a href="/" title="Home">Home</a> &middot; <a href="/about.html" title="About">About</a> &middot; <a href="/archive.html" title="Archive">Archive</a>
+    </div>
+  </header>
+  <div id="main">
+
+    {{ content }}
+  </div>
+  <div id="sidebar">
+    {% include sidebar.html %}
+  </div>
+  <div id="footer">
+    {% include footer.html %}
+  </div>
+</div>
+{% include javascript_footer.html %}
+</body>
+</html>

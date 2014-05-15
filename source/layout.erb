@@ -1,0 +1,25 @@
+<%= partial 'header' %>
+<div id="container">
+  <header id="main-head">
+    <div id="logo">&nbsp;</div>
+    <div id="title">
+      <h1><a href="/">Lolindrath</a></h1>
+    </div>
+    <div id="navigation">
+      <a href="/" title="Home">Home</a> &middot; <a href="/about/" title="About">About</a> &middot; <a href="/archive/" title="Archive">Archive</a>
+    </div>
+  </header>
+  <div id="main">
+
+    <%= yield %>
+  </div>
+  <div id="sidebar">
+    <%= partial 'sidebar' %>
+  </div>
+  <div id="footer">
+    <%= partial 'footer' %>
+  </div>
+</div>
+<%= partial 'javascript_footer' %>
+</body>
+</html>

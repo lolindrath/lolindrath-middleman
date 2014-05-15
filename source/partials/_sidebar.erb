@@ -1,0 +1,18 @@
+<section id="icon_navigation">
+  <h3>Navigation</h3>
+  <a class="icon icon-feed" href="/atom.xml" title="RSS Feed"></a>
+  <a class="icon icon-github" href="https://github.com/lolindrath" title="Github"></a>
+  <a class="icon icon-stackoverflow" href="http://careers.stackoverflow.com/andywilliams" title="Stack Overflow"></a>
+  <a class="icon icon-twitter" href="https://twitter.com/lolindrath" title="Twitter"></a>
+</section>
+
+<section>
+  <h3>Recent Posts</h3>
+  <ul id="recent_posts">
+    <% blog.articles[0...5].each do |article| %>
+      <li class="post">
+        <%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span>
+      </li>
+    <% end %>
+  </ul>
+</section>

@@ -1,0 +1,301 @@
+@import 'bourbon/bourbon';
+// Visual Grid
+// $visual-grid: true;
+@import 'neat/neat';
+@import 'normalize';
+@import 'icomoon';
+@import 'base';
+@import 'helpers';
+
+
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+// Breakpoints
+$mobile: new-breakpoint(max-width 600px 6);
+
+$font-size: 16px;
+$text-color: #444;
+$header-color: #222;
+$base-color: #336699;
+$light-text-color: #aaa;
+
+$mono: 'Source Sans Pro';
+
+body {
+    color: $text-color;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: $font-size;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Sorts Mill Goudy', serif;
+    color: $header-color;
+    line-height: 1.1em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+a {
+    color: $base-color;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+a:visited {
+    border-bottom: 1px solid;
+}
+
+img { }
+
+ul {
+    margin: 1em;
+    padding-left: 1em;
+}
+
+blockquote {
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    border-left: 1px solid $base-color;
+    color: #666;
+}
+
+#container {
+    @include outer-container;
+}
+
+#main-head { }
+
+#logo {
+    height: 90px;
+    background: image-url("bw_octo.png") right top no-repeat;
+    @include span-columns(3);
+    @include shift(1);
+
+    @include media($mobile) {
+        @include shift(0);
+    }
+}
+
+#navigation {
+    @include span-columns(3);
+
+    @include media($mobile) {
+        @include span-columns(5);
+        @include shift(1);
+    }
+}
+
+#title {
+    @include span-columns(6);
+    @include omega;
+
+    h1 {
+        font-size: 2.875em;
+        font-family: 'Sorts Mill Goudy', serif;
+
+        a {
+            color: $header-color;
+            border-bottom: 0;
+        }
+    }
+}
+
+#main {
+    margin-top: 1em;
+    @include pad(0 1em 0 1em);
+    @include span-columns(6);
+    @include shift(2);
+
+    border-top: 5px double $base-color;
+
+    @include media($mobile) {
+        @include span-columns(6);
+        @include shift(0);
+    }
+}
+
+#sidebar {
+    @include span-columns(3);
+    @include omega;
+    @include media($mobile) {
+        @include span-columns(6);
+    }
+
+    #icon_navigation {
+        h3 {
+            display: none;
+            @include media($mobile) {
+                display: block;
+            }
+        }
+        a:hover {
+                color: $base-color;
+            }
+        .icon {
+            font-size: 2em;
+            color: $light-text-color;
+            border-bottom: none;
+
+
+        }
+    }
+}
+
+#footer {
+    color: $light-text-color;
+    a {
+        color: $light-text-color;
+    }
+    @include span-columns(5);
+    @include shift(3);
+    @include omega;
+    @include media($mobile) {
+        @include span-columns(6);
+        @include shift(0);
+    }
+}
+
+#pagination {
+    @include span-columns(4);
+    @include media($mobile) {
+        @include span-columns(4);
+    }
+}
+
+#comments {
+    @include span-columns(9);
+    @include omega;
+}
+
+article { }
+
+p.meta {
+    text-transform: uppercase;
+    color: $light-text-color;
+    margin-bottom: 0;
+}
+
+header h1 {
+    margin-bottom: 0;
+
+    a {
+        border-bottom: none;
+    }
+}
+
+// Code Highlighting
+.highlight {
+  font-size: 0.875em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  word-wrap: break-word;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+//After??
+@import 'solarized-light';

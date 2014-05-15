@@ -1,0 +1,11 @@
+<% wrap_layout :layout do %>
+    <%= partial :post, layout: { current_article: current_article } %>
+    <hr>
+    <% if data.site.disqus_shortname && current_article.data.comments == true %>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"></div>
+      <%= partial :disqus %>
+  </section>
+  <% end %>
+<% end %>

@@ -1,0 +1,22 @@
+---
+title: Home
+pageable: true
+---
+
+<% page_articles.each_with_index do |article, i| %>
+  <%= partial :post, locals: { current_article: article } %>
+<% end %>
+
+<% if paginate %>
+<div id="pagination">
+  <p>
+  <% if next_page %>
+    <%= link_to '← Older', next_page, class: :older %>
+  <% end %>
+  <span>•</span>
+  <% if prev_page %>
+    <%= link_to 'Newer →', prev_page, class: :newer %>
+  <% end %>
+</p>
+</div>
+<% end %>
