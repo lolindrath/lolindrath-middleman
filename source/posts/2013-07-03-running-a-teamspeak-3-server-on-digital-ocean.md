@@ -48,10 +48,20 @@ sudo chown -R teamspeak3 /usr/local/teamspeak3
 
 ## Step 5 - Have TeamSpeak 3 Start on Droplet Boot Up ##
 
-The TeamSpeak software package comes with an init script that we just have to symbolically link in:
+The TeamSpeak software package comes with an init script that we have to run as a the teamspeak3 user.
+
+Create and set the content of the `/etc/init.d/teamspeak3` file to this:
 
 ~~~
-sudo ln -s /usr/local/teamspeak3/ts3server_startscript.sh /etc/init.d/teamspeak3
+#!/bin/sh
+
+su -c "/usr/local/teamspeak3/ts3server_startscript.sh $@" teamspeak3
+~~~
+
+Set the file to be executable:
+
+~~~
+sudo chmod u+x /etc/init.d/teamspeak3
 ~~~
 
 And then tell the server to start TeamSpeak when the Droplet starts
@@ -118,3 +128,5 @@ Now only the people you choose can access your TeamSpeak server.
 Now you have a great way to chat with friends using a server you control. Just distribute the your droplets address plus the password and you're set.
 
 More help and advanced server setup articles are available in the [TeamSpeak 3 Knowledgebase](https://support.teamspeakusa.com/index.php?/Knowledgebase/List/Index/10/english)
+
+**Update (05/28/2014)**: incorporated instructions on how to install as a regular user into this article. Here's [How to Run Teamspeak 3 Server as a Regular User](/2014/05/28/running-teamspeak-3-server-as-a-regular-user/)

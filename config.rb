@@ -5,7 +5,7 @@
 # Time.zone = "UTC"
 
 activate :directory_indexes
-#activate :livereload
+activate :livereload
 activate :syntax
 
 set :markdown_engine, :kramdown
