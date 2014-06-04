@@ -1,7 +1,10 @@
 ---
+layout: post
 title: Running Teamspeak 3 Server As a Regular User
 date: 2014-05-28 09:59 UTC
 tags:
+comments: true
+published: true
 ---
 
 In my previous article on [How to run Teamspeak3 on](http://lolindrath.com/2013/07/03/running-a-teamspeak-3-server-on-digital-ocean/) [Digital Ocean](https://www.digitalocean.com/?refcode=d7c77f58d8de) the instructions have you create a teamspeak3 user and change ownership of the files. I noticed in some of the comments over there that people noticed it was running as root, not the greatest thing for security.
