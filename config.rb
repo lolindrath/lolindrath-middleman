@@ -37,6 +37,7 @@ activate :blog do |blog|
 end
 
 page "/atom.xml", layout: false
+page "/sitemap.xml", :layout => false
 
 ###
 # Compass
