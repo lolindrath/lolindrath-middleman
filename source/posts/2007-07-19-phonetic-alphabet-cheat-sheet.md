@@ -18,7 +18,7 @@ Now I keep this next to the phone so I don’t have to think of a word that clea
 
 ![Phonetic Alphabet Cheatsheet preview](2007-07-19-phonetic-alphabet-cheat-sheet/phonetic_preview.png)
 
-Phonetic Alphabet Cheat Sheet: [Download PDF](2007-07-19-phonetic-alphabet-cheat-sheet/alpha-bravo.pdf)
+Phonetic Alphabet Cheat Sheet: [Download PDF](/pdf/alpha-bravo.pdf)
 
 Source: [NATO phonetic alphabet – Wikipedia](http://en.wikipedia.org/wiki/NATO_phonetic_alphabet)
 

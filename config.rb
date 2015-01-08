@@ -113,14 +113,14 @@ when 'production'
   activate :deploy do |deploy|
     deploy.build_before = true
     deploy.method = :rsync
-    deploy.host   = "web2"
+    deploy.host   = "lolindrath.com"
     deploy.path   = "/var/www/blog"
   end
 else
   activate :deploy do |deploy|
     deploy.build_before = true
     deploy.method = :rsync
-    deploy.host   = "web2"
+    deploy.host   = "lolindrath.com"
     deploy.path   = "/var/www/staging-blog"
   end
 end
