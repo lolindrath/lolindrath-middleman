@@ -2,6 +2,8 @@
 title: Ruby vs Go - Structuring Data
 date: 2016-06-02 15:08 UTC
 tags: golang ruby taskpaper
+comments: true
+published: true
 ---
 
 I'm trying to write a [Taskpaper](http://taskpaper3.com) parser in Go.

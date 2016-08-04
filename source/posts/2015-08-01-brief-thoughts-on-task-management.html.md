@@ -2,6 +2,8 @@
 title: Brief Thoughts On Task Management
 date: 2015-08-01 18:37 UTC
 tags:
+comments: true
+published: true
 ---
 
 1. No task management means you're completely interrupt driven. Whatever email arrives or whoever stops by your office always gets first priority. A lot of bosses will reward you and promote you for this because you're reacting to their every whim, but that doesn't mean it's the best for the company. No task management means you're not working on anything that's important yet not urgent (at least not yet). There's no goal-oriented, strategic thinking there.

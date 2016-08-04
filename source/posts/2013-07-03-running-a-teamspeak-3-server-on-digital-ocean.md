@@ -15,7 +15,7 @@ This how-to assumes you're running Ubuntu 12.04 (or something close to it) and t
 Our first step is to download the TeamSpeak 3 server from teamspeak.com. Make sure you're in a directory you own and then execute the following command:
 
 ~~~
-wget http://ftp.4players.de/pub/hosted/ts3/releases/3.0.10.3/teamspeak3-server_linux-amd64-3.0.10.3.tar.gz
+wget http://dl.4players.de/ts/releases/3.0.12.4/teamspeak3-server_linux_amd64-3.0.12.4.tar.bz2
 ~~~
 
 ## Step 2 - Create the `teamspeak3` User ##
@@ -30,7 +30,7 @@ You can hit enter for all the questions to take the default answers.
 The following step will extract the software we will need:
 
 ~~~
-tar xzf teamspeak3-server_linux-amd64-3.0.10.3.tar.gz
+tar xjf teamspeak3-server_linux_amd64-3.0.12.4.tar.bz2
 ~~~
 
 ## Step 4 - Move the Software Into Place ##

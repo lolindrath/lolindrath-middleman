@@ -4,6 +4,7 @@ title: "Seven Years is too Long"
 date: 2014-01-29 17:10
 comments: true
 categories: 
+published: true
 ---
 
 I was at my last company for seven years. I moved between locations, projects, positions and responsibilities but I was at the same company for seven years, not really even thinking about moving.

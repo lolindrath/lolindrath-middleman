@@ -3,7 +3,8 @@ layout: post
 title: "Embarassing Old Code"
 date: 2014-04-10 05:32
 comments: true
-categories:
+tags:
+published: true
 ---
 
 # The Inspiration #

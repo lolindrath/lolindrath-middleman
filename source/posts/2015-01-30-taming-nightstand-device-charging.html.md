@@ -2,6 +2,8 @@
 title: Taming Nightstand Device Charging
 date: 2015-01-30 11:00 UTC
 tags:
+comments: true
+published: true
 ---
 
 Like most modern-day geeks I have too many devices that need to be recharged regularly. The constant accumulation of new wall warts has turned into this situation next to my nightstand:
