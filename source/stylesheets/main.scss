@@ -33,16 +33,18 @@ $header-color: #222;
 $base-color: #336699;
 $light-text-color: #aaa;
 
-$mono: 'Source Sans Pro';
+$mono-font: 'Source Code Pro';
+$body-font: 'Lora';
+$header-font: 'Oswald';
 
 body {
     color: $text-color;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $body-font, sans-serif;
     font-size: $font-size;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Sorts Mill Goudy', serif;
+    font-family: $header-font, serif;
     color: $header-color;
     line-height: 1.1em;
 }
@@ -77,6 +79,10 @@ blockquote {
     padding-left: 0.5em;
     border-left: 1px solid $base-color;
     color: #666;
+}
+
+code {
+    font-family: $mono-font, monospace;
 }
 
 #container {
